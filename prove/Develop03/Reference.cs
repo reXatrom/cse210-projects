@@ -1,9 +1,11 @@
+using System;
+
 public class Reference
 {
     private string book;
     private int chapter;
     private int startVerse;
-    private int endVerse;
+    private int? endVerse;
 
     public Reference(string book, int chapter, int verse)
     {
@@ -29,7 +31,7 @@ public class Reference
         }
         else
         {
-            return $"{book} {chapter}:{startVerse}-{endVerse};"
+            return $"{book} {chapter}:{startVerse}-{endVerse}";
         }
     }
 }
