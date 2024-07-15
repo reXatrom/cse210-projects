@@ -168,16 +168,16 @@ class Program
 
                         switch(values[0])
                         {
-                            case "Simple Goal":
-                                Goals.Add(new Simple(values[1], values[2], double.Parse(values[3]), int.Parse(values[4])));
+                            case "simple":
+                                Goals.Add(new SimpleGoal(values[1], values[2], double.Parse(values[3]), int.Parse(values[4])));
                                 break;
 
-                            case "Eternal Goal":
-                                Goals.Add(new Eternal(values[1], values[2], double.Parse(values[3]), int.Parse(values[4])));
+                            case "eternal":
+                                Goals.Add(new EternalGoal(values[1], values[2], double.Parse(values[3]), int.Parse(values[4])));
                                 break;
 
-                            case "Checklist Goal":
-                                Goals.Add(new Checklist(values[1], values[2], double.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6])));
+                            case "checklist":
+                                Goals.Add(new ChecklistGoal(values[1], values[2], double.Parse(values[3]), int.Parse(values[4]), int.Parse(values[5]), int.Parse(values[6])));
                                 break;
                         }
                     }
